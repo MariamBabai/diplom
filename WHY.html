@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html><!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,20 +13,22 @@
 </head>
 <body>
 <header class="container-fluid header position-relative ">
-    <nav class="header_nav  py-md-5 align-items-center d-flex justify-content-center">
+    <nav class="header_nav  py-md-4 align-items-center d-flex justify-content-around">
         <a class="nav__home" href="index.html">
             <img src="steelLogo.JPG" class="d-inline-block"></a>
-        <a class="nav__link px-md-4 text-decoration-none" href="главнаяEN.html">ЗНИЖКИ</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="new collection.html">КЛІЄНТИ</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="looks.html">КОНТАКТИ</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="looks.html">НАША ПРОДУКЦІЯ</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="#">0664875775</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="#">0664875775</a>
-        <button type="button" id="registration"><i class="fas fa-user"></i></button>
-        <button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button>
-
+        <a class="nav__link  text-decoration-none" href="главнаяEN.html">ЗНИЖКИ</a>
+        <a class="nav__link  text-decoration-none" href="new collection.html">КЛІЄНТИ</a>
+        <a class="nav__link  text-decoration-none" href="looks.html">КОНТАКТИ</a>
+        <a class="nav__link  text-decoration-none" href="looks.html">НАША ПРОДУКЦІЯ</a>
+        <a class="nav__link  text-decoration-none" href="#">0664875775</a>
+        <a class="nav__link  text-decoration-none" href="#">0664875775</a>
+        <div class="header__nav__regLog">
+            <button type="button" id="registration"><i class="fas fa-user"></i></button>
+            <button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button>
+        </div>
     </nav>
 </header>
+
 <section>
     <article><img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/></article>
     <article><img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/></article>
@@ -44,14 +37,8 @@
     <article><img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/></article>
     <article><img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/></article>
 </section>
-
-<!--<img src = "image (2).png">-->
-<!--    <img src = "image (3).png">-->
-<!--    <img src = "image (4).png">-->
-<!--    <img src = "image (5).png">-->
-<!--    <img src = "image (6).png">-->
-<!--    <img src = "image (7).png">-->
-<p>dfghjkpl[;poiuyt</p>
+<!-- =====================================================================ITEMS===================================================================  -->
+<p>lgfdfghjkl</p>
 <section>
     <article><img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/></article>
     <article><img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/></article>
@@ -60,20 +47,41 @@
     <article><img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/></article>
     <article><img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/></article>
 </section>
+<!-- =====================================================================ITEMS===================================================================  -->
 
-<!--    <img src = "image (8).png">-->
-<!--    <img src = "image (9).png">-->
-<!--    <img src = "image (10).png">-->
-<!--    <img src = "image (11).png">-->
-<!--    <img src = "image (12).png">-->
-<!--    <img src = "image (13).png">-->
-    <img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/>
-    <img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/>
-    <img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/>
-    <img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/>
-    <img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/>
-    <img src="https://img.icons8.com/glyph-neue/64/000000/bot.png"/>
-</SECTION>
+<!-- ===========================================REGISTRATION FORM================================================================= -->
+
+<form action="" id="form" class="display_none">
+    <label for="user-name">Логін</label>
+    <input type="text" name="user-name" id="user-name"  placeholder="Введіть логін">
+
+    <label for="password">Пароль</label>
+    <input type="password" name="password" id="password" placeholder="Введіть пароль">
+
+    <label for="password">Пароль</label>
+    <input type="password" name="password" id="password_one_more_time" placeholder="Повторіть пароль">
+
+    <label for="user-email">E-mail</label>
+    <input type="text" name="user-email" id="user-email" placeholder="Введіть E-mail">
+
+    <button type="button" id="accept_registration"> ЗАРЕЄСТРУВАТИСЯ </button>
+</form>
+
+<!-- ===========================================REGISTRATION FORM================================================================= -->
+
+<!-- ===============================================================greeting DIV===============================================================  -->
+
+<div class="display_none" id="greeting">
+
+</div>
+<!-- ===============================================================greeting DIV===============================================================  -->
+
+
+
+<!-- =================================FILTER FIELD==================================================================================== -->
+
+<!-- =================================FILTER FIELD==================================================================================== -->
+
 
 <footer>
     <ul class="footer__nav py-5">
@@ -81,15 +89,15 @@
         <li><a class="text-decoration-none footer__nav__item" href="shipping.html">ОПЛАТА ТА ДОСТАВКА</a></li>
         <li><a class="text-decoration-none footer__nav__item" href="#">ГАРАНТІЯ</a></li>
         <li><a class="text-decoration-none footer__nav__item" href="#">ФОТО ГАЛЕРЕЯ</a></li>
-        <li><a class="text-decoration-none footer__nav__item" href="#">ЧОМУ МИ</a></li>
+        <li><a class="text-decoration-none footer__nav__item" href="WHY.html">ЧОМУ МИ</a></li>
         <li class="footer__nav__item pt-3">КОНТАКТИ</li>
         <li><a class="text-decoration-none footer__nav__item" href="#">088958473</a></li>
         <li><a class="text-decoration-none footer__nav__item" href="#">066477867</a></li>
         <li class="footer__nav__item pt-3"><a>НАПИШІТЬ НАМ:</a></li>
-        <div class="footer__social2">
-            <a class="footer__social__iconAdd" href="https://www.instagram.com/suppressors.steel/"><i class="fab fa-instagram position-absolute"></i></a>
-            <a class="footer__social__iconAdd" href="https://www.facebook.com/silentsteell/"><i class="fab fa-facebook-f position-absolute"></i></a>
-            <a class="footer__social__iconAdd" href="https://www.youtube.com/channel/UC8p-4wuPbJgk0kj_JX4oJpg?view_as=subscriber"><i class="fab fa-youtube position-absolute"></i></a></div>
+        <div class="footer__social text-right-right">
+            <a class="footer__social__icon position-relative" href="https://www.instagram.com/suppressors.steel/"><i class="fab fa-whatsapp"></i></a>
+            <a class="footer__social__icon position-relative" href="https://www.facebook.com/silentsteell/"><i class="fab fa-telegram-plane"></i></a>
+        </div>
         </div>
     </ul>
     <div class="footer__social text-center">
@@ -97,7 +105,7 @@
         <a class="footer__social__icon position-relative" href="https://www.facebook.com/silentsteell/"><i class="fab fa-facebook-f position-absolute"></i></a>
         <a class="footer__social__icon position-relative" href="https://www.youtube.com/channel/UC8p-4wuPbJgk0kj_JX4oJpg?view_as=subscriber"><i class="fab fa-youtube position-absolute"></i></a></div>
     </div>
-    <p class="text-center text-light py-3">STEEL © 2021</p>
+    <p class="text-center text-light py-3">STEEL © 2022</p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="bootstrap.js"></script>
