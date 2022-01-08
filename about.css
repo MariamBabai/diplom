@@ -1,0 +1,64 @@
+header, footer{
+    background-color: black;
+}
+
+.nav__link{
+    color: white;
+    text-align: justify;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.nav__link:hover{
+    color: white;
+    cursor: pointer;
+}
+.nav__home{
+    left: 0;
+    position: absolute;
+}
+.top__notification{
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+section{
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+article{
+    font-family: Arial;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+article span{
+    background-color: #fbff2c;
+    
+}
+.footer__nav{
+    list-style: none;
+}
+.footer__nav__item{
+    color: #AAAAAA;
+    font-size: 1.2rem;
+}
+.footer__nav__item:hover{
+    color: gray;
+}
+.footer__social__icon{
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 40px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer__social__icon i{
+    color: white;
+    font-size: 2rem;
+}
