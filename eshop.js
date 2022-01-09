@@ -13,6 +13,7 @@ let itemsField = document.getElementById('items');
 const MIN_VALUE = document.getElementById('min_value');
 const MAX_VALUE = document.getElementById('max_value');
 const FILTR_BTN = document.getElementById('filter_btn')
+const EXIt = document.getElementById('exit');
 
 
 
@@ -50,9 +51,10 @@ function renderItems (items){
         // console.log(items)
         const itemDiv = `
         <div class ="item_div">
-            <p> Имя: ${items[item] ['name']} </p>
-            <p> Описание: ${items[item] ['description']} </p>
-            <p>  Цена: <span class="price">${items[item] ['price']}</span> </p>
+        <img src = "${items[item].image}" class="silencer_img">
+            <p class = "silencer_name"> ${items[item] ['name']} </p>
+            <p>${items[item] ['description']} </p>
+            <p><span class="price">${items[item] ['price']}</span> </p>
             <buttton type="button" id="${item}" class= "add_Item_btn add_btn"> Купить </button>
         </div>
         `
@@ -66,6 +68,11 @@ registration.addEventListener('click', function (){
     form.classList.add('registration_form');
     form.classList.remove('display_none');
 
+})
+
+EXIt.addEventListener('click', function(){
+    form.classList.add('display_none');
+    form.classList.remove('registration_form');
 })
 
 
@@ -110,6 +117,7 @@ function finishRegistration(){
 
 EMAIL.addEventListener('blur' ,function (){
     validateEmail(EMAIL.value);
+    
 });
 
 PASSWORD.addEventListener('blur' ,function (){
@@ -126,8 +134,8 @@ LOGIN.addEventListener('blur' ,function (){
 
 
 
-function validateEmail(email) 
-    {
+function validateEmail(email) {
+    console.log(email)
         let re = /\S+@\S+\.\S+/;
         let b = re.test(email);
         if(b){
@@ -175,8 +183,7 @@ function validateEmail(email)
 
     
     
-    function validateLogin(login) 
-    {
+    function validateLogin(login) {
         let re = /^[a-zA-Z\-]+$/;;
         let b = re.test(login);
         if(b){
@@ -192,6 +199,9 @@ function validateEmail(email)
             LOGIN.classList.remove('accepted')
         }
     }
+
+
+    
 
 
 
@@ -236,9 +246,10 @@ function filterItems(obj, minValue = MIN_VALUE.value, maxValue = MAX_VALUE.value
 
                 const itemDiv = `
                 <div class ="item_div">
-                    <p> Имя: ${element[key] ['name']} </p>
-                    <p> Описание: ${element[key] ['description']} </p>
-                    <p>  Цена: <span class="price">${element[key] ['price']}</span> </p>
+                <img src = "${element[key].image}" class="silencer_img">
+                    <p class="silencer_name"> ${element[key] ['name']} </p>
+                    <p> ${element[key] ['description']} </p>
+                    <p> <span class="price">${element[key] ['price']}</span> </p>
                     <buttton type="button" id="${key}" class= "add_Item_btn add_btn"> Купить </button>
                 </div>
                 `

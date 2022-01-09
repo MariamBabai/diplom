@@ -15,55 +15,98 @@
 </head>
 <body>
 <header class="container-fluid header position-relative ">
-    <nav class="header_nav  py-md-5 align-items-center d-flex justify-content-center">
-        <a class="nav__home" href="index.html">
+    <nav class="header_nav  py-md-4 align-items-center d-flex justify-content-around">
+        <a class="nav__home nav__link" href="main.html">
             <img src="steelLogo.JPG" class="d-inline-block"></a>
-        <a class="nav__link px-md-4 text-decoration-none" href="главнаяEN.html">ЗНИЖКИ</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="new collection.html">КЛІЄНТИ</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="looks.html">КОНТАКТИ</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="main.html">НАША ПРОДУКЦІЯ</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="#">0664875775</a>
-        <a class="nav__link px-md-4 text-decoration-none" href="#">0664875775</a>
-        <button type="button" id="registration"><i class="fas fa-user"></i></button>
-        <button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button>
-
+        <a class="nav__link  text-decoration-none" href="главнаяEN.html">ЗНИЖКИ</a>
+        <a class="nav__link  text-decoration-none" href="pic.html">КЛІЄНТИ</a>
+        <a class="nav__link  text-decoration-none" href="contacts.html">КОНТАКТИ</a>
+        <a class="nav__link  text-decoration-none" href="product.html">НАША ПРОДУКЦІЯ</a>
+        <a class="nav__link  text-decoration-none" href="#">0664875775</a>
+        <a class="nav__link  text-decoration-none" href="#">0664875775</a>
+        <div class="header__nav__regLog">
+            <button type="button" id="registration"><i class="fas fa-user"></i></button>
+            <button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button>
+        </div>
     </nav>
-</header>
-
-<div class = "countries">
-
-    <div><p>ХАРКІВ</p>
-    <p><b>САМОВИВІЗ</b>
-        <p>У вас есть возможность получить заказ в нашем офисе.
-            Для этого необходимо оформить заказ на сайте или
-            по телефону. Когда ваш заказ будет готов к выдаче,
-            мы Вам позвоним.
-            Офис находится по адресу: г. Харьков ул. Академика Проскуры 1
+    <h2>ОПЛАТА ТА ДОСТАВКА</h2>
+    <BR>
+<div class="container-fluid">
+<div class = "countries d-flex flex-row justify-content-around">
+    <div class="col-4 countries__item"><p><i class="fas fa-map-marked-alt"></i>  ХАРКІВ</p>
+    <b>САМОВИВІЗ</b>
+        <p>Ви можете забрати прям з нашого офісу!
+            Для цього необхідно оформити замовлення на сайті або
+            по телефону. Коли ваше замовлення буде готове до видачі,
+            ми вам зателефонуємо.
+            Офіс знаходиться за адресою: </p><p><b>г. Харків вул. Академіка Проскури 1</b></p>
+        <p><b>Способи оплати:</b></p>
+        <p>
+        <ul>
+        <li>Готівкою при отриманні.</li>
+        <li>Картками Visa, MasterCard, Privat24</li>
+            <li>Безготівкова оплата</li></ul>
         </p>
+
     </div>
 
-    <div><p>УКРАЇНА</p></div>
-    <div><p>ІНШІ КРАЇНИ</p></div>
-
+    <div class="col-4 countries__item"><p><i class="fas fa-hryvnia"></i>  УКРАЇНА</p>
+        <b>ДОСТАВКА</b>
+    <p>Компанія «Нова пошта» на будь-яке відділення.
+        Сроки доставки зазвичай складають 1-2 дня з моменту відправлення.</p>
+    <p><b>Способи оплати:</b></p>
+    <p>
+        <ul>
+    <li>Готівкою при отриманні. У поштовому відділенні ви зможете переглянути товар.</li>
+    <li>Картками Visa, MasterCard, Privat24</li>
+            <li>Безготівкова оплата</li></ul>
+    </p>
+    </div>
+    <div class="col-4 countries__item"><p><i class="fas fa-globe-europe"></i>  ІНШІ КРАЇНИ</p> <b>ДОСТАВКА</b>
+        <p>Компанія «Укр-пошта» на будь-яке відділення в країні-відправнику та державна поштова служба в країні-отримувачі.
+            Кожна посилка застрахована на повну вартість товару. Відправлення здійснюється в день готовності замовлення і
+            надалі ви можете отримувати актуальну інформацію про місце знаходження посилки за трек-номером.</p>
+        <p><b>Способи оплати:</b></p>
+        <p>
+        <ul>
+        <li>Картками Visa i MasterCard</li>
+            <li>Безготівкова оплата</li></p></ul></div>
 </div>
-<footer>
-    <ul class="footer__nav py-5">
-        <li><a class="text-decoration-none footer__nav__item" href="about.html">ПРО НАС</a></li>
-        <li><a class="text-decoration-none footer__nav__item" href="shipping.html">ОПЛАТА ТА ДОСТАВКА</a></li>
-        <li><a class="text-decoration-none footer__nav__item" href="#">ГАРАНТІЯ</a></li>
-        <li><a class="text-decoration-none footer__nav__item" href="#">ФОТО ГАЛЕРЕЯ</a></li>
-        <li class="footer__nav__item pt-3">КОНТАКТИ</li>
-        <li><a class="text-decoration-none footer__nav__item" href="#">088958473</a></li>
-        <li><a class="text-decoration-none footer__nav__item" href="#">066477867</a></li>
-        <li class="footer__nav__item pt-3"><a>НАПИШІТЬ НАМ:</a></li>
-    </ul>
-    <div class="footer__social text-center">
-        <a class="footer__social__icon position-relative" href="https://www.instagram.com/suppressors.steel/"><i class="fab fa-instagram position-absolute"></i></a>
-        <a class="footer__social__icon position-relative" href="https://www.facebook.com/silentsteell/"><i class="fab fa-facebook-f position-absolute"></i></a>
-        <a class="footer__social__icon position-relative" href="https://www.youtube.com/channel/UC8p-4wuPbJgk0kj_JX4oJpg?view_as=subscriber"><i class="fab fa-youtube position-absolute"></i></a></div>
-    </div>
-    <p class="text-center text-light py-3">STEEL © 2021</p>
-</footer>
+</div>
+    <footer>
+        <ul class="footer__nav py-5 d-flex flex-row justify-content-around align-items-baseline">
+            <div class="footer__nav__aboutUs">
+                <li><a class="text-decoration-none footer__nav__item" href="about.html">ПРО НАС</a></li>
+                <li><a class="text-decoration-none footer__nav__item" href="shipping.html">ОПЛАТА ТА ДОСТАВКА</a></li>
+                <!-- <li><a class="text-decoration-none footer__nav__item" href="#">ГАРАНТІЯ</a></li>-->
+
+            </div>
+            <div class="footer__nav__whyWe">
+                <li><a class="text-decoration-none footer__nav__item" href="pic.html">ФОТО ГАЛЕРЕЯ</a></li>
+                <li><a class="text-decoration-none footer__nav__item" href="WHY.html">ЧОМУ МИ</a></li>
+            </div>
+            <div class="footer__nav__contacts">
+                <li class="footer__nav__item pt-3 footer__nav__item" href="#">КОНТАКТИ</li>
+                <li><a class="text-decoration-none footer__nav__item" href="#">088958473</a></li>
+                <li><a class="text-decoration-none footer__nav__item" href="#">066477867</a></li>
+            </div>
+            <div class="footer__nav__textUS">
+                <li class="footer__nav__item pt-3"><a>НАПИШІТЬ НАМ:</a></li>
+                <div class="footer__social mt-3 text-right-right d-flex justify-content-around">
+                    <a class="footer__social__icon position-relative" href="https://www.instagram.com/suppressors.steel/"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a class="footer__social__icon position-relative" href="https://www.facebook.com/silentsteell/"><i
+                            class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div></div>
+        </ul>
+        <div class="footer__social text-center">
+            <a class="footer__social__icon position-relative" href="https://www.instagram.com/suppressors.steel/"><i class="fab fa-instagram position-absolute"></i></a>
+            <a class="footer__social__icon position-relative" href="https://www.facebook.com/silentsteell/"><i class="fab fa-facebook-f position-absolute"></i></a>
+            <a class="footer__social__icon position-relative" href="https://www.youtube.com/channel/UC8p-4wuPbJgk0kj_JX4oJpg?view_as=subscriber"><i class="fab fa-youtube position-absolute"></i></a></div>
+        </div>
+        <p class="text-center text-light py-3">STEEL © 2022</p>
+    </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="bootstrap.js"></script>
 </body>

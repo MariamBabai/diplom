@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="product.css">
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -17,64 +17,55 @@
     <a class="nav__home" href="main.html">
       <img src="steelLogo.JPG" class="d-inline-block"></a>
     <a class="nav__link  text-decoration-none" href="главнаяEN.html">ЗНИЖКИ</a>
-    <a class="nav__link  text-decoration-none" href="new collection.html">КЛІЄНТИ</a>
-    <a class="nav__link  text-decoration-none" href="looks.html">КОНТАКТИ</a>
-    <a class="nav__link  text-decoration-none" href="looks.html">НАША ПРОДУКЦІЯ</a>
+    <a class="nav__link  text-decoration-none" href="pic.html">КЛІЄНТИ</a>
+    <a class="nav__link  text-decoration-none" href="contacts.html">КОНТАКТИ</a>
+    <a class="nav__link  text-decoration-none" href="#">НАША ПРОДУКЦІЯ</a>
     <a class="nav__link  text-decoration-none" href="#">0664875775</a>
     <a class="nav__link  text-decoration-none" href="#">0664875775</a>
     <div class="header__nav__regLog">
       <button type="button" id="registration"><i class="fas fa-user"></i></button>
-      <button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button>
+      <a href="http://127.0.0.1:5502/basket.html"><button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button></a>
     </div>
   </nav>
 </header>
+<div class="top__notification ">
+  <p class="py-1">ЗАРЕЄСТРУЙСЯ ТА ОТРИМУЙ ЗНИЖКУ 10%</p>
+</div>
+
+<!-- =====================================================================Filter===================================================================  -->
+
+<aside class="filter">
+  <div class="filter_field">
+    <input type="number" id="min_value" placeholder="Від">
+    <input type="number" id="max_value" placeholder="До">
+    <button type="button" id="filter_btn">Фильтр</button>
+  </div>
+</aside>
 
 <!-- =====================================================================ITEMS===================================================================  -->
+<section id="section_field">
+    <div  id="items">
 
-<section>
-  <br>
-  <p><b>Мы STEEL и мы работаем для Вас</b></p>
+    </div>
+  
 </section>
-<article>
-    <pre><b>
-         Компания ТМ «STEEL» производит одни из лучших глушителей для огнестрельного оружия в мире.
-         Завоевав лидерство на рынке Украины в 2018 г, сейчас мы его не только  удерживаем, но и
-         постоянно развиваемся, покоряя новые рынки и сердца пользователей. На сегоднишний день
-         компания «STEEL» имеет самый широкий ассортимент глушителей в мире, что позволяет подобрать
-         наиболее подходящий саундмодератор для каждой из поставленных задач. Военные, спецподразделения,
-         спортсмены, охотники, тактические стрелки используют продукцию компании от .22 до 50 BMG
-         калибров от Украины до США.</b></pre>
-  <pre>Продукция компании имеет значительно больший ресурс чем у конкурирующих фирм и лучшую конструкцию в целом.</pre>
-  <br>
-
-  <pre><b>Компания имеет полностью весь цикл производства:</b></pre>
-  <li> конструкторский отдел разработок и инноваций</li><li> производство с современным парком станков</li><li> отличную маркетинговую команду</li>
-  <br>
-
-  <pre>Вся компания «STEEL» каждый день работает над тем, что бы стрелки всего мира могли получить лучшие решения
-    в сфере гашения звука выстрела для любых задач!
-  </pre>
-
-</article>
-<!-- =====================================================================ITEMS===================================================================  -->
-
 <!-- ===========================================REGISTRATION FORM================================================================= -->
 
 <form action="" id="form" class="display_none">
-  <label for="user-name">Логін</label>
-  <input type="text" name="user-name" id="user-name"  placeholder="Введіть логін">
+    <label for="user-name">Логін</label>
+    <input type="text" name="user-name" id="user-name"  placeholder="Введіть логін">
 
-  <label for="password">Пароль</label>
-  <input type="password" name="password" id="password" placeholder="Введіть пароль">
+    <label for="password">Пароль</label>
+    <input type="password" name="password" id="password" placeholder="Введіть пароль">
 
-  <label for="password">Пароль</label>
-  <input type="password" name="password" id="password_one_more_time" placeholder="Повторіть пароль">
+    <label for="password">Пароль</label>
+    <input type="password" name="password" id="password_one_more_time" placeholder="Повторіть пароль">
 
-  <label for="user-email">E-mail</label>
-  <input type="text" name="user-email" id="user-email" placeholder="Введіть E-mail">
+    <label for="user-email">E-mail</label>
+      <input type="text" name="user-email" id="user-email" placeholder="Введіть E-mail">
 
-  <button type="button" id="accept_registration"> ЗАРЕЄСТРУВАТИСЯ </button>
-  <button type="button" id="exit"><i class="fas fa-times"></i></button>
+    <button type="button" id="accept_registration"> ЗАРЕЄСТРУВАТИСЯ </button>
+    <button type="button" id="exit"><i class="fas fa-times"></i></button>
 </form>
 
 <!-- ===========================================REGISTRATION FORM================================================================= -->
@@ -84,6 +75,14 @@
 <div class="display_none" id="greeting">
 
 </div>
+<!-- ===============================================================greeting DIV===============================================================  -->
+
+
+
+<!-- =================================FILTER FIELD==================================================================================== -->
+
+<!-- =================================FILTER FIELD==================================================================================== -->
+
 
 <footer>
   <ul class="footer__nav py-5 d-flex flex-row justify-content-around align-items-baseline">

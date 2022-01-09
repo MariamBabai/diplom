@@ -18,8 +18,8 @@ body{
     cursor: pointer;
 }
 .nav__home{
-/*    left: 0;
-    position: absolute;*/
+    /*    left: 0;
+        position: absolute;*/
 }
 .top__notification{
     background-color: red;
@@ -27,9 +27,7 @@ body{
     color: white;
     font-weight: bold;
 }
-img{
-    width: 100%;
-}
+
 .footer__nav{
     list-style: none;
 }
@@ -74,14 +72,15 @@ p{
     flex-wrap: wrap;
 }
 .div_item{
-   margin: 5% 2%;
+    margin: 5% 2%;
 }
 .tovar{
     background-color:#0b2e13 ;
 }
-button{
+button {
     background: red;
 }
+
 #exit{
     width: 10%;
     margin-left: 75%;
@@ -91,9 +90,8 @@ button{
     border-color: white;
     border-style: none;
 }
-
 .uncvisible{
-display: none;
+    display: none;
 }
 
 .visible{
@@ -119,6 +117,7 @@ display: none;
     background-color: white;
     border-radius: 2%;
     font-weight: bold;
+    z-index: 1000;
 
 }
 
@@ -200,3 +199,5 @@ display: none;
     color: black;
     font-weight: bold;
 }
+
+

@@ -6,7 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="pic.css">
+    <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -17,7 +18,7 @@
         <a class="nav__home" href="main.html">
             <img src="steelLogo.JPG" class="d-inline-block"></a>
         <a class="nav__link  text-decoration-none" href="главнаяEN.html">ЗНИЖКИ</a>
-        <a class="nav__link  text-decoration-none" href="pic.html">КЛІЄНТИ</a>
+        <a class="nav__link  text-decoration-none" href="#">КЛІЄНТИ</a>
         <a class="nav__link  text-decoration-none" href="contacts.html">КОНТАКТИ</a>
         <a class="nav__link  text-decoration-none" href="product.html">НАША ПРОДУКЦІЯ</a>
         <a class="nav__link  text-decoration-none" href="#">0664875775</a>
@@ -34,10 +35,9 @@
 
 <!-- =====================================================================ITEMS===================================================================  -->
 
-<section id="section_field">
-    <img src = "photo1641670847.jpeg">
-  
-</section>
+
+
+
 <!-- =====================================================================ITEMS===================================================================  -->
 
 <!-- ===========================================REGISTRATION FORM================================================================= -->
@@ -53,14 +53,44 @@
     <input type="password" name="password" id="password_one_more_time" placeholder="Повторіть пароль">
 
     <label for="user-email">E-mail</label>
-      <input type="text" name="user-email" id="user-email" placeholder="Введіть E-mail">
+    <input type="text" name="user-email" id="user-email" placeholder="Введіть E-mail">
 
     <button type="button" id="accept_registration"> ЗАРЕЄСТРУВАТИСЯ </button>
     <button type="button" id="exit"><i class="fas fa-times"></i></button>
 </form>
 
 <!-- ===========================================REGISTRATION FORM================================================================= -->
+<div id="carouselExampleIndicators" class="text-center m-auto carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
 
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641730322 (2).jpeg')">
+
+        </div>
+        <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641671059.jpeg')"></div>
+
+        <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641725509 (2).jpeg')"></div>
+        <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641730322 (1).jpeg')"></div>
+        <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641725509 (3).jpeg')"></div>
+        <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641730322.jpeg')"></div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
 <!-- ===============================================================greeting DIV===============================================================  -->
 
 <div class="display_none" id="greeting">
@@ -84,7 +114,7 @@
 
         </div>
         <div class="footer__nav__whyWe">
-            <li><a class="text-decoration-none footer__nav__item" href="pic.html">ФОТО ГАЛЕРЕЯ</a></li>
+            <li><a class="text-decoration-none footer__nav__item" href="#">ФОТО ГАЛЕРЕЯ</a></li>
             <li><a class="text-decoration-none footer__nav__item" href="WHY.html">ЧОМУ МИ</a></li>
         </div>
         <div class="footer__nav__contacts">
@@ -112,6 +142,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="bootstrap.js"></script>
 <script src="eshop.js"></script>
+<script src="slider.js"></script>
 <script src="items.json"></script>
 </body>
 </html>

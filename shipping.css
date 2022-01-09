@@ -14,8 +14,8 @@ header, footer{
     cursor: pointer;
 }
 .nav__home{
-    left: 0;
-    position: absolute;
+/*    left: 0;
+    position: absolute;*/
 }
 .top__notification{
     background-color: red;
@@ -24,15 +24,32 @@ header, footer{
     font-weight: bold;
 }
 .countries{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    height: 100px;
-    background-color: white;
+/*    height: 100px;*/
+
+
     color: black;
-    col:3;
+    border-radius: 10px;
 
 }
+ul{
+    text-align: left;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.footer__nav__aboutUs a:last-of-type{
+    color: white;
+}
+.countries__item{
+    padding-top: 15px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: yellow;
+
+}
+
 .footer__nav{
     list-style: none;
 }
@@ -83,6 +100,7 @@ header, footer{
 button{
     background: red;
 }
+
 .uncvisible{
     display: none;
 }

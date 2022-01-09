@@ -18,8 +18,8 @@ body{
     cursor: pointer;
 }
 .nav__home{
-/*    left: 0;
-    position: absolute;*/
+    /*    left: 0;
+        position: absolute;*/
 }
 .top__notification{
     background-color: red;
@@ -27,9 +27,7 @@ body{
     color: white;
     font-weight: bold;
 }
-img{
-    width: 100%;
-}
+
 .footer__nav{
     list-style: none;
 }
@@ -74,10 +72,19 @@ p{
     flex-wrap: wrap;
 }
 .div_item{
-   margin: 5% 2%;
+    margin: 5% 2%;
 }
 .tovar{
     background-color:#0b2e13 ;
+}
+.registration_form > button{
+    margin-top: 30px;
+    width: 40%;
+    height: 10%;
+    align-self: center;
+    border-radius: 8px;
+    font-weight: bold;
+
 }
 button{
     background: red;
@@ -91,9 +98,8 @@ button{
     border-color: white;
     border-style: none;
 }
-
 .uncvisible{
-display: none;
+    display: none;
 }
 
 .visible{
@@ -119,6 +125,7 @@ display: none;
     background-color: white;
     border-radius: 2%;
     font-weight: bold;
+    z-index: 1000;
 
 }
 
@@ -136,15 +143,7 @@ display: none;
     margin-bottom: 5px;
 }
 
-.registration_form > button{
-    margin-top: 30px;
-    width: 40%;
-    height: 10%;
-    align-self: center;
-    border-radius: 8px;
-    font-weight: bold;
 
-}
 #user-name, #password, #password_one_more_time, #user-email{
     border-radius: 10px;
 }
@@ -172,7 +171,11 @@ display: none;
 
 
 .add_Item_btn{
-    background-color: greenyellow;
+    background-color: red;
+    width: 150px;
+    height: 40px;
+    font-size: 1.5em;
+    text-align: center;
 }
 .checkout{
     background-color: lightgreen;
@@ -199,4 +202,30 @@ display: none;
     border-radius: 2%;
     color: black;
     font-weight: bold;
+}
+
+.filter_field{
+    position: sticky;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.silencer_img{
+    width: 60%;
+}
+.item_div{
+    width: 30%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.item_div > p{
+    color: black;
+}
+
+.silencer_name{
+    font-weight: bold;
+    font: 1.5em sans-serif;
 }
