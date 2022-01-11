@@ -1,0 +1,110 @@
+button{
+    width: 30%;
+    height: 15%;
+    text-align: center;
+    border-radius: 20%;
+}
+.btn_field{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.silencer_img{
+    width: 60%;
+}
+.item_div{
+    width: 30%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.item_div p{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.display_none{
+    display: none;
+}
+
+
+.vision{
+    z-index: 4;
+    display: block;
+}
+
+.display_inline_block{
+    display: inline-block;
+}
+.plus, .minus{
+    width: 10%;
+    height: 20%;
+    text-align: center;
+    border-radius: 20%;
+    background-color: yellow;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+
+h2{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+#order_form{
+    background-color: black;
+    color: white;
+}
+
+input{
+    background-color: black;
+    color: white;
+    height: 30px;
+    
+}
+
+#accepter-firstname    {
+    margin-left: 85px;
+    
+}
+
+#accepter-secondname{
+
+    margin-left: 42px;
+}
+
+
+#accepter-phone{
+    margin-left: 7px;
+}
+
+#end_purchase{
+background-color: RED;
+color: white;
+}
+
+.delete{
+    background-color: white;
+    border-style: none;
+}
+
+.delete:hover{
+cursor: pointer;
+}
+
+.checkout{
+    background-color: green;
+    width: 10%;
+    height: 15%;
+    border-radius: 3%;
+    position: absolute;
+}

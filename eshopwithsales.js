@@ -49,7 +49,7 @@ function renderItems (items){
         <img src = "${items[item].image}" class="silencer_img">
             <p class = "silencer_name"> ${items[item] ['name']} </p>
             <p>${items[item] ['description']} </p>
-            <p><span class="price">${items[item] ['price'] + ' грн'}</span> </p>
+            <p><strike class="price">${items[item] ['price']}</strike> ${items[item] ['price']-700} </p>
             <div class="more_information" >
             <a href="http://127.0.0.1:5501/item.html" target="_self" class="more_information_btn" ><buttton type="button" id="${item}" > ? </button><a>
             </div>
@@ -120,6 +120,9 @@ function filterItems(obj, minValue = MIN_VALUE.value, maxValue = MAX_VALUE.value
 
     })
 }
+
+
+
 
 
 

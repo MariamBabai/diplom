@@ -82,16 +82,6 @@ p{
 button{
     background: red;
 }
-#exit{
-    width: 10%;
-    margin-left: 75%;
-    size: 10px;
-    background-color: white;
-    color: red;
-    border-color: white;
-    border-style: none;
-}
-
 .uncvisible{
 display: none;
 }
@@ -119,6 +109,7 @@ display: none;
     background-color: white;
     border-radius: 2%;
     font-weight: bold;
+    z-index: 3;
 
 }
 
@@ -145,6 +136,51 @@ display: none;
     font-weight: bold;
 
 }
+
+
+
+/* =============================== */
+
+.entry_form{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 42%;
+    height: 85%;
+    top: 5%;
+    left:30%;
+    background-color: white;
+    border-radius: 2%;
+    font-weight: bold;
+    z-index: 3;
+
+}
+
+.entry_form > input{
+    margin: 0 10px;
+    height: 50px;
+    width: 80%;
+    align-self: center;
+
+}
+.entry_form > label{
+    margin-top: 26px;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.entry_form > button{
+    margin-top: 30px;
+    width: 40%;
+    height: 10%;
+    align-self: center;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+
+
 #user-name, #password, #password_one_more_time, #user-email{
     border-radius: 10px;
 }
@@ -168,6 +204,17 @@ display: none;
     left:30%;
     background-color: rgb(156,162,165);
     border-radius: 2%;
+}
+.greeting_entry_div{
+    display: block;
+    position: fixed;
+    width: 42%;
+    height: 50%;
+    top: 10%;
+    left:30%;
+    background-color: rgb(156,162,165);
+    border-radius: 2%;
+    
 }
 
 
@@ -200,3 +247,34 @@ display: none;
     color: black;
     font-weight: bold;
 }
+
+
+.disply_block_position_absolute{
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    left: 85%;
+    top: 15%;
+    text-align: center;
+}
+
+.entry_chose{
+    background-color: black;
+    color: white;
+}
+
+.registration_chose{
+    background-color: black;
+    color: white;
+}
+.entry_chose:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.registration_chose:hover{
+    color: red;
+    cursor: pointer;
+}
+

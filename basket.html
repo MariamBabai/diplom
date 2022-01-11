@@ -5,16 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="basket.css">
 </head>
 <body>
+    <h2>ВАШЕ ЗАМОВЛЕННЯ</h2>
     <section>
         <div class="cart">
+
 
         </div>
         <button type="button" class= "checkout"> Оформить заказ </button>
 
+        <br><br><br>
+    </section>
+    <section>
+        <BR><BR>
+        <form action="" class="display_none" id="order_form">
+            <fieldset>
+                <legend>ОФОРМЛЕННЯ ЗАМОВЛЕННЯ</legend>
+                <label for="accepter-firstname">Ваше ім'я:</label>
+                <input type="text" name="accepter-firstname" id="accepter-firstname" >
+<BR><BR>
+                <label for="accepter-secondname">Ваше призвище:</label>
+                <input type="text" name="accepter-secondname" id="accepter-secondname">
+                <br><br>
+                <label for="accepter-phone">Ваш номер телефону:</label>
+                <input type="tel" name="accepter-phone" id="accepter-phone">
+
+                <label for="city">Ваша країна:</label>
+                <input list="city" class="form-control" placeholder="Україна" type="text">
+                <datalist id="city">
+                    <option value="Україна"></option>
+                    <option value="Росія"></option>
+                    <option value="Польща"></option>
+                    <option value="США"></option>
+                    <option value="Канада"></option>
+                </datalist>
+                <br><br>
+                <label for="city">Ваше місто:</label>
+                <input list="city" class="form-control" placeholder="Київ" type="text">
+                <datalist id="city">
+                    <option value="Київ"></option>
+                    <option value="Харків"></option>
+                    <option value="Львів"></option>
+                    <option value="Дніпро"></option>
+                    <option value="Вінниця"></option>
+                </datalist>
+<BR><BR>
+                
+                    <P>ОБЕРІТЬ СВОСІБ ДОСТАВКИ</P>
+                    <input type="radio" id="ukr-post" name="post">
+                    <label for="ukr-post">Укр-ПОШТА</label> <br>
+                    <input type="radio" id="new-post" name="post" >
+                    <label for="new-post">Нова-ПОШТА</label>
+    
+               
+                <BR><BR>
+               
+                    <legend>ОБЕРІТЬ СПОСІБ ОПЛАТИ</legend>
+                    <input type="radio" id="pay-cash" name="pay" checked>
+                    <label for="pay-cash">Готікою</label> <br>
+                    <input type="radio" id="pay-card" name="pay" >
+                    <label for="pay-card">Картою</label>
+                    <input type = "text" id = "card_input" class = " display_none " placeholder="Введіть номер Вашої карти" >
+                    <br><br>
+               
+                <br><br>
+                <label for="promocode">Введіть промокод:</label>
+                <input type="text" name="promocode" id="promocode">
+                <p class="final_price">
+                    Ітогова ціна
+                </p>
+                <button type="submit" id="end_purchase">Сплатити замовлення</button>
+            </fieldset>
+
+        </form>
     </section>
 
     <script src="add.js"></script>
+    <script src="registration.js"></script>
 </body>
 </html>

@@ -6,7 +6,8 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="contacts.css">
+  <link rel="stylesheet" href="pic.css">
+  <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -14,26 +15,27 @@
 <body>
 <header class="container-fluid header position-relative ">
   <nav class="header_nav  py-md-4 align-items-center d-flex justify-content-around">
-    <a class="nav__home" href="main.html">
+    <a class="nav__home" href="main2.html">
       <img src="steelLogo.JPG" class="d-inline-block"></a>
-    <a class="nav__link  text-decoration-none" href="главнаяEN.html">ЗНИЖКИ</a>
-    <a class="nav__link  text-decoration-none" href="pic.html">КЛІЄНТИ</a>
-    <a class="nav__link  text-decoration-none" href="contacts.html">КОНТАКТИ</a>
-    <a class="nav__link  text-decoration-none" href="product.html">НАША ПРОДУКЦІЯ</a>
+    <a class="nav__link  text-decoration-none" href="главнаяEN.html">SALES</a>
+    <a class="nav__link  text-decoration-none" href="pic.html">CLIENTS</a>
+    <a class="nav__link  text-decoration-none" href="contacts.html">CONTACTS</a>
+    <a class="nav__link  text-decoration-none" href="product.html">OUR SILENCERS</a>
     <a class="nav__link  text-decoration-none" href="#">0664875775</a>
     <a class="nav__link  text-decoration-none" href="#">0664875775</a>
     <div class="header__nav__regLog">
       <button type="button" id="registration"><i class="fas fa-user"></i></button>
-      <a href="http://127.0.0.1:5501/basket.html"><button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button></a>
+      <button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button>
     </div>
-    
   </nav>
 </header>
 <div class="top__notification ">
-  <p class="py-1">ЗАРЕЄСТРУЙСЯ ТА ОТРИМУЙ ЗНИЖКУ 10%</p>
+  <p class="py-1">REGISTER AND GET 10% DISCOUNT</p>
 </div>
 
 <!-- =====================================================================ITEMS===================================================================  -->
+
+
 
 
 <!-- =====================================================================ITEMS===================================================================  -->
@@ -41,24 +43,55 @@
 <!-- ===========================================REGISTRATION FORM================================================================= -->
 
 <form action="" id="form" class="display_none">
-  <label for="user-name">Логін</label>
-  <input type="text" name="user-name" id="user-name"  placeholder="Введіть логін">
+  <label for="user-name">LogIn</label>
+  <input type="text" name="user-name" id="user-name"  placeholder="Your login">
 
-  <label for="password">Пароль</label>
-  <input type="password" name="password" id="password" placeholder="Введіть пароль">
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" placeholder="Enter password">
 
-  <label for="password">Пароль</label>
-  <input type="password" name="password" id="password_one_more_time" placeholder="Повторіть пароль">
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password_one_more_time" placeholder="Password once again">
 
   <label for="user-email">E-mail</label>
-  <input type="text" name="user-email" id="user-email" placeholder="Введіть E-mail">
+  <input type="text" name="user-email" id="user-email" placeholder="Enter E-mail">
 
-  <button type="button" id="accept_registration"> ЗАРЕЄСТРУВАТИСЯ </button>
+  <button type="button" id="accept_registration"> REGISTER </button>
   <button type="button" id="exit"><i class="fas fa-times"></i></button>
+
 </form>
 
 <!-- ===========================================REGISTRATION FORM================================================================= -->
+<div id="carouselExampleIndicators" class="text-center m-auto carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
 
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641730322 (2).jpeg')">
+
+    </div>
+    <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641671059.jpeg')"></div>
+
+    <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641725509 (2).jpeg')"></div>
+    <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641730322 (1).jpeg')"></div>
+    <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641725509 (3).jpeg')"></div>
+    <div class="carousel-item text-center  w-100" style="height: 400px; background-size: cover; background-position: center; background-image: url('photo1641730322.jpeg')"></div>
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 <!-- ===============================================================greeting DIV===============================================================  -->
 
 <div class="display_none" id="greeting">
@@ -66,29 +99,7 @@
 </div>
 <!-- ===============================================================greeting DIV===============================================================  -->
 
-<h2>КОНТАКТИ<img src="https://img.icons8.com/glyph-neue/64/000000/ringing-phone.png"/></h2>
-<br>
-<p>АБИ ПРОКОНСУЛЬТУВАТИСЯ АБО ОФОРМИТИ ЗАКАЗ: </p>
-<a href = "tel:+38 (097) 438 41 45"><button type="button">+38 (097) 438 41 45</button></a>
-<br>
-<br>
-<a href = "tel:+38 (097) 438 41 45">+38 (097) 438 41 45</a>
-<p>International_retail_dep@silent-steel.in.ua</p>
-<br><br><br>
-<h3>НАШЕ РОЗТАШУВАННЯ</h3>
-<br>
-<p><i class="fas fa-map-marker-alt"></i>
-  Адрес главного офиса STEEL:
-  61085, Украина, г. Харьков
-  Академика Проскуры 1</p>
-<p><i class="fas fa-map-marker-alt"></i>
-  Адрес производства STEEL:
-  61085, Украина, г. Харьков
-  Академика Проскуры 1</p>
-<BR>
-<h3><img src="https://img.icons8.com/glyph-neue/64/000000/time-machine.png"/>ГРАФІК РОБОТИ</h3>
-<PRE>Пн.-Пт.: 9:00-21:00</PRE>
-<PRE>Сб.-Вс.: 10:00-21:00</PRE>
+
 
 <!-- =================================FILTER FIELD==================================================================================== -->
 
@@ -98,22 +109,22 @@
 <footer>
   <ul class="footer__nav py-5 d-flex flex-row justify-content-around align-items-baseline">
     <div class="footer__nav__aboutUs">
-      <li><a class="text-decoration-none footer__nav__item" href="about.html">ПРО НАС</a></li>
-      <li><a class="text-decoration-none footer__nav__item" href="shipping.html">ОПЛАТА ТА ДОСТАВКА</a></li>
+      <li><a class="text-decoration-none footer__nav__item" href="about.html">OUR COMPANY</a></li>
+      <li><a class="text-decoration-none footer__nav__item" href="shipping.html">PAYMENT AND SHIPPING</a></li>
       <!-- <li><a class="text-decoration-none footer__nav__item" href="#">ГАРАНТІЯ</a></li>-->
 
     </div>
     <div class="footer__nav__whyWe">
-      <li><a class="text-decoration-none footer__nav__item" href="pic.html">ФОТО ГАЛЕРЕЯ</a></li>
-      <li><a class="text-decoration-none footer__nav__item" href="WHY.html">ЧОМУ МИ</a></li>
+      <li><a class="text-decoration-none footer__nav__item" href="pic.html">OUR GALLERY</a></li>
+      <li><a class="text-decoration-none footer__nav__item" href="WHY.html">WHY STEEL?</a></li>
     </div>
     <div class="footer__nav__contacts">
-      <li class="footer__nav__item pt-3 footer__nav__item" href="contacts.html">КОНТАКТИ</li>
+      <li class="footer__nav__item pt-3 footer__nav__item" href="contacts.html">CONTACTS</li>
       <li><a class="text-decoration-none footer__nav__item" href="#">088958473</a></li>
       <li><a class="text-decoration-none footer__nav__item" href="#">066477867</a></li>
     </div>
     <div class="footer__nav__textUS">
-      <li class="footer__nav__item pt-3"><a>НАПИШІТЬ НАМ:</a></li>
+      <li class="footer__nav__item pt-3"><a>CONTACT US:</a></li>
       <div class="footer__social mt-3 text-right-right d-flex justify-content-around">
         <a class="footer__social__icon position-relative" href="https://t.me/suppressor_steel_bot?start="><i
                 class="fab fa-whatsapp"></i></a>
@@ -132,7 +143,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="bootstrap.js"></script>
 <script src="eshop.js"></script>
-<script src="registration.js"></script>
+<script src="slider.js"></script>
 <script src="items.json"></script>
 </body>
 </html>

@@ -17,12 +17,12 @@
     <nav class="header_nav  py-md-4 align-items-center d-flex justify-content-around">
         <a class="nav__home" href="main.html">
             <img src="steelLogo.JPG" class="d-inline-block"></a>
-        <a class="nav__link  text-decoration-none" href="главнаяEN.html">ЗНИЖКИ</a>
+        <a class="nav__link  text-decoration-none" href="sales.html">ЗНИЖКИ</a>
         <a class="nav__link  text-decoration-none" href="#">КЛІЄНТИ</a>
         <a class="nav__link  text-decoration-none" href="contacts.html">КОНТАКТИ</a>
         <a class="nav__link  text-decoration-none" href="product.html">НАША ПРОДУКЦІЯ</a>
-        <a class="nav__link  text-decoration-none" href="#">0664875775</a>
-        <a class="nav__link  text-decoration-none" href="#">0664875775</a>
+        <a class="nav__link  text-decoration-none" href="tel:0664875775">0664875775</a>
+        <a class="nav__link  text-decoration-none" href="tel:0664875775">0664875775</a>
         <div class="header__nav__regLog">
             <button type="button" id="registration"><i class="fas fa-user"></i></button>
             <button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button>
@@ -32,17 +32,13 @@
 <div class="top__notification ">
     <p class="py-1">ЗАРЕЄСТРУЙСЯ ТА ОТРИМУЙ ЗНИЖКУ 10%</p>
 </div>
-
+<div id= "field_entry_or_registration" class="display_none">
+    <div class="entry_chose"> УВІЙТИ</div>
+    <div class="registration_chose"> ЗАРЕЄСТРУВАТИСЯ</div>
+</div>
 <!-- =====================================================================ITEMS===================================================================  -->
 
-
-
-
-<!-- =====================================================================ITEMS===================================================================  -->
-
-<!-- ===========================================REGISTRATION FORM================================================================= -->
-
-<form action="" id="form" class="display_none">
+<form action="" id="form_registration" class="display_none">
     <label for="user-name">Логін</label>
     <input type="text" name="user-name" id="user-name"  placeholder="Введіть логін">
 
@@ -53,11 +49,43 @@
     <input type="password" name="password" id="password_one_more_time" placeholder="Повторіть пароль">
 
     <label for="user-email">E-mail</label>
-    <input type="text" name="user-email" id="user-email" placeholder="Введіть E-mail">
+      <input type="text" name="user-email" id="user-email" placeholder="Введіть E-mail">
 
     <button type="button" id="accept_registration"> ЗАРЕЄСТРУВАТИСЯ </button>
-    <button type="button" id="exit"><i class="fas fa-times"></i></button>
+    <button type="button" class="exit"> Х </button>
 </form>
+
+<!-- =========================================== ENTRY FORM================================================================= -->
+
+
+<form action="" id="form_entry" class="display_none">
+    <label for="user-name">Логін</label>
+    <input type="text" name="user-name-entry" id="user-name-entry"  placeholder="Введіть логін">
+
+    <label for="password">Пароль</label>
+    <input type="password" name="password-entry" id="password-entry" placeholder="Введіть пароль">
+
+    <button type="button" id="accept_entry"> УВІЙТИ </button>
+    <button type="button" class="exit"> Х </button>
+</form>
+
+<!-- ===============================================================greeting DIV===============================================================  -->
+
+<div class="display_none" id="greeting">
+
+</div>
+<!-- ===============================================================greeting_entry DIV===============================================================  -->
+<div class="display_none" id="greeting_entry">
+
+</div>
+
+
+
+<!-- =====================================================================ITEMS===================================================================  -->
+
+<!-- ===========================================REGISTRATION FORM================================================================= -->
+
+
 
 <!-- ===========================================REGISTRATION FORM================================================================= -->
 <div id="carouselExampleIndicators" class="text-center m-auto carousel slide" data-ride="carousel">
@@ -91,20 +119,23 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-<!-- ===============================================================greeting DIV===============================================================  -->
-
-<div class="display_none" id="greeting">
-
-</div>
-<!-- ===============================================================greeting DIV===============================================================  -->
-
 
 
 <!-- =================================FILTER FIELD==================================================================================== -->
 
 <!-- =================================FILTER FIELD==================================================================================== -->
-
-
+<BR><BR>
+<h2>ВІДГУКИ НАШИХ КЛІЄНТІВ</h2>
+<BR>
+<section class="d-flex flex-wrap justify-content-center flex-row text-center  justify-content-around mx-3">
+    <article class="col-3 m-3 <!--col-4 - на мобильных тоже-->"><br><b><p>ВІДГУК1</p></b><img class="d-inline-block mw-100"  src="https://img.icons8.com/glyph-neue/64/000000/coins.png"/><p>Ви отримуєте найкраще співвідношення ціна-якість.</p></article>
+    <article class="col-3 m-3 <!--col-4 - на мобильных тоже-->"><br><b><p>ВІДГУК1</p></b><img class="d-inline-block mw-100" src="https://img.icons8.com/glyph-neue/64/000000/contract.png"/><p>Ви отримуєте гарантію як на термін використання, так і на кількість пострілів.</p></article>
+    <article class="col-3 m-3 <!--col-4 - на мобильных тоже-->"><br><b><p>ВІДГУК1</p></b><img class="d-inline-block mw-100" src="https://img.icons8.com/glyph-neue/64/000000/technical-support.png"/><p>Вас з радістю проконсультують наші фахівці та допоможуть підібрати глушник виходячи з ваших завдань та побажань.</p></article>
+    <article class="col-3 m-3 <!--col-4 - на мобильных тоже-->"><br><b><p>ВІДГУК1</p></b><img class="d-inline-block mw-100" src="https://img.icons8.com/glyph-neue/64/000000/delivery.png"/><p>Ви можете швидко отримати своє замовлення завдяки великому складу готової продукції та швидкому обробленню замовлень.</p></article>
+    <article class="col-3 m-3 <!--col-4 - на мобильных тоже-->"><br><b><p>ВІДГУК1</p></b><img class="d-inline-block mw-100" src="https://img.icons8.com/glyph-neue/64/000000/doctor-fate-helmet.png"/><p>Ви захищені як споживач, тому що якість наших послуг відповідає міжнародним стандартам. Ви можете здійснити повернення протягом 14 днів відповідно до законодавства.</p></article>
+    <article class="col-3 m-3 <!--col-4 - на мобильных тоже-->"><br><b><p>ВІДГУК1</p></b><img class="d-inline-block mw-100" src="https://img.icons8.com/glyph-neue/64/000000/diamond.png"/><p>Вы можете получить не только серийное изделие, но и индивидуально спроектированное нашим инженером для Вас.
+    </p></article>
+</section>
 <footer>
     <ul class="footer__nav py-5 d-flex flex-row justify-content-around align-items-baseline">
         <div class="footer__nav__aboutUs">
@@ -141,8 +172,7 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="bootstrap.js"></script>
-<script src="eshop.js"></script>
-<script src="slider.js"></script>
+<script src="registration.js"></script>
 <script src="items.json"></script>
 </body>
 </html>

@@ -17,10 +17,7 @@ body{
     color: white;
     cursor: pointer;
 }
-.nav__home{
-    /*    left: 0;
-        position: absolute;*/
-}
+
 .top__notification{
     background-color: red;
     text-align: center;
@@ -55,9 +52,7 @@ body{
     color: white;
     font-size: 2rem;
 }
-p{
-    color: white;
-}
+
 #item_field{
     width: 200px;
     height: 200px;
@@ -201,3 +196,24 @@ button {
 }
 
 
+
+p{
+    color: black;
+}
+h2{
+    text-align: center;
+    margin: 35%;
+}
+article {
+    background-color: yellow;
+}
+
+article{
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#item_field{
+    width: 200px;
+    height: 200px;
+}

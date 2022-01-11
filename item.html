@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="item.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -14,17 +14,17 @@
 <body>
 <header class="container-fluid header position-relative ">
     <nav class="header_nav  py-md-4 align-items-center d-flex justify-content-around">
-        <a class="nav__home" href="main.html">
+        <a class="nav__home" href="index.html">
             <img src="steelLogo.JPG" class="d-inline-block"></a>
-        <a class="nav__link  text-decoration-none" href="sales.html">ЗНИЖКИ</a>
-        <a class="nav__link  text-decoration-none" href="pic.html">КЛІЄНТИ</a>
-        <a class="nav__link  text-decoration-none" href="contacts.hmtl">КОНТАКТИ</a>
+        <a class="nav__link  text-decoration-none" href="главнаяEN.html">ЗНИЖКИ</a>
+        <a class="nav__link  text-decoration-none" href="new collection.html">КЛІЄНТИ</a>
+        <a class="nav__link  text-decoration-none" href="looks.html">КОНТАКТИ</a>
         <a class="nav__link  text-decoration-none" href="product.html">НАША ПРОДУКЦІЯ</a>
         <a class="nav__link  text-decoration-none" href="tel:0664875775">0664875775</a>
         <a class="nav__link  text-decoration-none" href="tel:0664875775">0664875775</a>
         <div class="header__nav__regLog">
             <button type="button" id="registration"><i class="fas fa-user"></i></button>
-            <a href="http://127.0.0.1:5501/basket.html"><button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button></a>
+            <a href="http://127.0.0.1:5501/basket.html" target="_self"><button type="button" id="cartId"><i class="fas fa-shopping-cart"></i></button></a>
         </div>
     </nav>
 </header>
@@ -32,10 +32,6 @@
     <p class="py-1">ЗАРЕЄСТРУЙСЯ ТА ОТРИМУЙ ЗНИЖКУ 10%</p>
 </div>
 
-<section id="section_field">
-    <img src = "photo1641670847.jpeg">
-  
-</section>
 
 <div id= "field_entry_or_registration" class="display_none">
     <div class="entry_chose"> УВІЙТИ</div>
@@ -85,6 +81,27 @@
 
 </div>
 
+<!-- ===================================================================ITEM_FIELD================================================== -->
+
+<div class ="item_div">
+    <div class="img_item">
+    <img src = "assets/number1.jpg" class="silencer_img">
+    </div>
+    <div class="item_text_description">
+        <p class = "silencer_name"> <b>DOMINATOR</b> </p>
+        <p class="description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, doloremque facere repudiandae illo maiores 
+            qui inventore perferendis veniam mollitia repellat obcaecati incidunt exercitationem, eligendi, 
+            quisquam a eius blanditiis error et. 
+        </p>
+        <p><span class="price">Ціна: 7500 грн</span> </p>
+    </div>
+
+</div>
+
+
+<!-- ===================================================================ITEM_FIELD================================================== -->
+
+
 
 
 <footer>
@@ -96,13 +113,13 @@
 
         </div>
         <div class="footer__nav__whyWe">
-            <li><a class="text-decoration-none footer__nav__item" href="pic.html">ФОТО ГАЛЕРЕЯ</a></li>
+            <li><a class="text-decoration-none footer__nav__item" href="#">ФОТО ГАЛЕРЕЯ</a></li>
             <li><a class="text-decoration-none footer__nav__item" href="WHY.html">ЧОМУ МИ</a></li>
         </div>
         <div class="footer__nav__contacts">
-            <li class="footer__nav__item pt-3 footer__nav__item" href="contacts.html">КОНТАКТИ</li>
-            <li><a class="text-decoration-none footer__nav__item" href="#">088958473</a></li>
-            <li><a class="text-decoration-none footer__nav__item" href="#">066477867</a></li>
+            <li class="footer__nav__item pt-3 footer__nav__item" href="#">КОНТАКТИ</li>
+            <li><a class="text-decoration-none footer__nav__item" href="tel:0664875775">088958473</a></li>
+            <li><a class="text-decoration-none footer__nav__item" href="tel:0664875775">066477867</a></li>
         </div>
         <div class="footer__nav__textUS">
             <li class="footer__nav__item pt-3"><a>НАПИШІТЬ НАМ:</a></li>
@@ -123,8 +140,6 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="bootstrap.js"></script>
-<script src="eshop.js"></script>
 <script src="registration.js"></script>
-<script src="items.json"></script>
 </body>
 </html>
